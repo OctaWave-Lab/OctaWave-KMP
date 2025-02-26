@@ -1,0 +1,3 @@
+[submodule "external/OctaWave-Processor"]
+	path = external/OctaWave-Processor
+	url = https://github.com/OctaWave-Lab/OctaWave-Processor.git
