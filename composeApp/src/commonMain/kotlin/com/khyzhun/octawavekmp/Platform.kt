@@ -1,4 +1,4 @@
-package org.khyzhun.octawavekmp
+package com.khyzhun.octawavekmp
 
 interface Platform {
     val name: String

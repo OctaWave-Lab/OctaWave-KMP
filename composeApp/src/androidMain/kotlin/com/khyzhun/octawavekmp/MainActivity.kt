@@ -1,4 +1,4 @@
-package org.khyzhun.octawavekmp
+package com.khyzhun.octawavekmp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

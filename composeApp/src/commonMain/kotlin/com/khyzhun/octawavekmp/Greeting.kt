@@ -1,4 +1,4 @@
-package org.khyzhun.octawavekmp
+package com.khyzhun.octawavekmp
 
 class Greeting {
     private val platform = getPlatform()

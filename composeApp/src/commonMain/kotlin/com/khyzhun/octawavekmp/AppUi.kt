@@ -1,4 +1,4 @@
-package org.khyzhun.octawavekmp
+package com.khyzhun.octawavekmp
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

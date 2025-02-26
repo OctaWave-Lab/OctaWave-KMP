@@ -1,4 +1,4 @@
-package org.khyzhun.octawavekmp
+package com.khyzhun.octawavekmp
 
 actual object AudioProcessor {
     actual fun process(): String {

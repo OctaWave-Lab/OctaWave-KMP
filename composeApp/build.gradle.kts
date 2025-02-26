@@ -50,13 +50,16 @@ kotlin {
 android {
     namespace = "org.khyzhun.octawavekmp"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
-
+    android.ndkVersion = libs.versions.android.compileNdk.get()
     defaultConfig {
         applicationId = "org.khyzhun.octawavekmp"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
+        ndk {
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86", "x86_64")
+        }
     }
     packaging {
         resources {
@@ -71,6 +74,11 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+    externalNativeBuild {
+        cmake {
+            path = file("src/androidMain/cpp/CMakeLists.txt")
+        }
     }
 }
 

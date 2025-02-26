@@ -1,4 +1,4 @@
-#include "../../../../../../../external/OctaWave-Processor/src/AudioProcessor.h"
+#include "../../../../external/OctaWave-Processor/src/AudioProcessor.h"
 #include <iostream>
 using namespace std;
 
