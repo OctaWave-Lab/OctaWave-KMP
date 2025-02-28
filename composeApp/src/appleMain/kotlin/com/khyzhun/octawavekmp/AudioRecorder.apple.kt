@@ -1,9 +1,13 @@
 package com.khyzhun.octawavekmp
 
 actual class AudioRecorder {
-    actual fun onStartRecording() {
+    actual fun startRecording() {
     }
 
-    actual fun onStopRecording() {
+    actual fun stopRecording() {
+    }
+
+    actual fun getRecordedFilePath(): String {
+        return ""
     }
 }

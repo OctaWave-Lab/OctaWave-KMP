@@ -1,6 +1,7 @@
 package com.khyzhun.octawavekmp
 
 expect class AudioRecorder {
-    fun onStartRecording()
-    fun onStopRecording()
+    fun startRecording()
+    fun stopRecording()
+    fun getRecordedFilePath(): String
 }

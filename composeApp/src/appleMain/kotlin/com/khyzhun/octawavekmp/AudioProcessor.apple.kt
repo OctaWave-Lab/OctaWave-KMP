@@ -1,7 +1,7 @@
 package com.khyzhun.octawavekmp
 
-actual object AudioProcessor {
-    actual fun process(): String {
+actual class AudioProcessor {
+    actual fun processAudioFile(filePath: String): String {
         TODO("Not yet implemented")
     }
 }

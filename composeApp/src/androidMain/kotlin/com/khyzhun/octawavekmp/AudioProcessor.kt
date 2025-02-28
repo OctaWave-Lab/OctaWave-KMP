@@ -1,6 +1,6 @@
 package com.khyzhun.octawavekmp
 
-actual object AudioProcessor {
+actual class AudioProcessor {
 
     init {
         // Ensure the native library is loaded
@@ -8,5 +8,6 @@ actual object AudioProcessor {
     }
 
     // Declare C++ function
-    actual external fun process(): String
+    actual external fun processAudioFile(filePath: String): String
+
 }

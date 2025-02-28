@@ -18,11 +18,12 @@ class MainActivity : ComponentActivity() {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.RECORD_AUDIO), 1488)
         }
 
+        val audioProcessor = AudioProcessor()
         val audioRecorder = AudioRecorder()
-        val viewModel = AudioViewModel(audioRecorder)
+        val viewModel = AudioViewModel(audioProcessor, audioRecorder)
 
         setContent {
-            App(viewModel)
+            AudioScreen(viewModel)
         }
     }
 }

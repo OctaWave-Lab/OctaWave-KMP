@@ -1,5 +1,5 @@
 package com.khyzhun.octawavekmp
 
-expect object AudioProcessor {
-    fun process(): String
+expect class AudioProcessor {
+    fun processAudioFile(filePath: String): String
 }

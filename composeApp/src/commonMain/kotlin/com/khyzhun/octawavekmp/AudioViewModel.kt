@@ -1,15 +1,22 @@
 package com.khyzhun.octawavekmp
 
+import androidx.lifecycle.ViewModel
+
 class AudioViewModel(
-    private val audioRecorder: AudioRecorder
-) {
+    private val processor: AudioProcessor,
+    private val recorder: AudioRecorder
+) : ViewModel() {
 
     fun startRecording() {
-        audioRecorder.onStartRecording()
+        recorder.startRecording()
     }
 
     fun stopRecording() {
-        audioRecorder.onStopRecording()
+        recorder.stopRecording()
     }
 
+    fun processAudio(): String {
+        val filePath = recorder.getRecordedFilePath()
+        return processor.processAudioFile(filePath)
+    }
 }
