@@ -1,5 +1,6 @@
 #include <jni.h>
 #include <string>
+#include "CoreAudioProcessor.h"
 #include "AudioProcessor.h"
 
 extern "C" JNIEXPORT jstring JNICALL
