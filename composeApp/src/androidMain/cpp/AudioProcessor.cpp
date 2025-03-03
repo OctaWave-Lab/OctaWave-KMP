@@ -1,7 +1,6 @@
-#include "../../../../external/OctaWave-Processor/src/AudioProcessor.h"
-#include <iostream>
-using namespace std;
+#include "AudioProcessor.h"
+#include "CoreAudioProcessor.h"
 
-void AudioProcessor::process() {
-    cout << "Processing the audio" << endl;
+std::string processAudioFileInAndroid(const std::string& filePath) {
+    return ::processAudioFileInProcessor(filePath);
 }

@@ -17,6 +17,8 @@ class AudioViewModel(
 
     fun processAudio(): String {
         val filePath = recorder.getRecordedFilePath()
-        return processor.processAudioFile(filePath)
+        val result = processor.processAudioFile(filePath)
+        println("AudioViewModel | result=$result")
+        return result
     }
 }

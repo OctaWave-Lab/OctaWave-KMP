@@ -39,9 +39,8 @@ fun AudioScreen(viewModel: AudioViewModel) {
         ) {
             Text("Process Audio")
         }
-
         Spacer(modifier = Modifier.height(16.dp))
 
-        Text("Processed Audio: $processedAudio")
+        Text("Detected Frequency: $processedAudio")
     }
 }
